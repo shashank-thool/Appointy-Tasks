@@ -1,2 +1,2 @@
-# Placecom-website
-Website for Placecom
+# Appointy-Tasks
+Contains both task 1 and task 2
