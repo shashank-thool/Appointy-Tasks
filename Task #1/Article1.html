@@ -1,0 +1,169 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="alternate-stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <script src="swipe1.js"></script>
+    <title>Inshorts Web App</title>
+
+    <style>
+
+        header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+    }
+    .discover-link{
+        width:15%;
+        height: 100%;
+        display: flex;
+        color: black;
+    }
+
+    .left-arrow{
+        color: #2ed4cc;
+        max-width: 10px;
+        margin-left: 5px;
+        margin-top: 1vh;
+        text-align: start;
+        transform: scale(2, 1.5);
+    }   
+    .discover{
+        margin-left: 5px;
+        margin-top: 5px;
+        text-align: center;
+        color: black;
+        text-align: start;
+    }
+    .myfeed{
+        text-align: center;
+        width: 70%;
+        color: black;
+        height: 100%;
+    }
+    .arrow-bar{
+        width: 15%;
+        align-content: center;
+    }
+    .arrow-bar a:before{
+        content: '\2912';
+        margin-right: 15px;
+        margin-top: 5px;
+        float: right;
+        transform: scale(2.5, 1.2);
+        color: #2ed4cc;
+}
+
+    .myfeed hr{
+        background-color: #2ed4cc;
+        margin-top: 0px;
+        text-align: center;
+        width: 15%;
+        height: 2px;
+        align-content: flex-start;
+        border-radius: 500px;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+    }
+
+    #container {
+        position: relative;
+    }
+
+    #left {
+        float:left;
+        color: black;
+    }
+    #right {
+                
+        float:right;
+        color: black;
+    }
+    #center {
+        text-align:center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: black;
+    /* also tried overflow:hidden */
+    }
+
+    body{
+        position: relative;
+        min-height: 100vh;
+    }
+
+    body h2{
+        margin-left: 20px;
+    }
+    body .description{
+        margin-left: 20px;
+        line-height: 150%;
+        padding-bottom: 10vh;
+    }
+
+    .scroll img{
+        width: 100%;
+        height: auto;
+    }
+
+    .scroll
+    {
+        min-height: 100%;
+        overflow: scroll;
+    }
+
+    </style>
+
+    <body>
+        <header>
+            <div class = "discover-link">
+                <a href="" style="text-decoration: none;"> 
+                    <i class = left-arrow>&#x2039</i>Discover
+                </a>
+            </div>
+            <div class = "myfeed">My Feed</div>
+            <div class = "arrow-bar">
+                <a href=""></a>
+            </div>
+        </header>
+        <div class="scroll">
+            <img src="https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2020/10_oct/15_thu/img_1602754793879_158.jpg" 
+        alt = "NewsPicture">
+        <h2>
+            Vodafone Idea network down in parts of Maharashtra as key site in Pune flooded
+        </h2>
+        <p class = "description">
+            Vodafone Idea subscribers in Maharashtra are facing connectivity issues since Thursday morning as a key site in Pune got flooded following heavy rains. The company said a key site in Pune's Kalyani Nagar area got flooded and that its technical team is working to fully restore the services soon. Several users took to social media to complain of network disruption.
+            <br>
+            <small>short by Pragya Swastik / 03:22 pm on 15 Oct 2020,Thursday</small>
+        </p>
+            
+        </div>>
+        <footer class="sticky-bottom text-center bg-light">
+                <div class="footer">
+                    <div id="container">
+                        <a href="#" id="left" style="margin: 10px; font-size: 12px;"><img src="https://images.vexels.com/media/users/3/152864/isolated/preview/2e095de08301a57890aad6898ad8ba4c-yellow-circle-question-mark-icon-by-vexels.png" width="30px" height="30px" style="margin: 5px;"><br>Relevances</a>
+                        <a href="#" id="center" style="margin: 10px; font-size: 12px;"><img src="data:image/png;base64,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" width="30px" height="30px" style="margin: 5px;"><br>Share</a>
+                        <a href="#" id="right" style="margin: 10px; font-size: 12px;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEX///9isfZer/bu9/6Mw/i32PpfsPZqtffk8f3y+P5vt/fo8/72+/7H4Pvt9v5WrPaOxfgWNtQuAAACgElEQVR4nO3Z23KCMBhFYcTWcw/v/7QVflHRAEkIyaaz9j2232RlSseqitzlM+++Yn/R6H3XWffzkV243WRdjRAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEmF642/1zYX3aRxFXI6z3x/MmhrgWYX06VlUUcSXCFhhHXIfwmqg9ewgnrkJ4B8YQ1yC8JWoLDnUFwh4wnKgvfErUFhiqvPANGEpUF74kagsKVVzoBIYRtYWORG0BoUoLB06wmf8pKgtHgFei7z9TwsLBRG2+oeoK6/12/HM8ibLC0URtfndRVegB9CSKCifuYDefUDWFnkAvoqTQK1HbdKiKQu8TbDZ5ioLCIOA0UU8YkKhtIlQ5YTBwiqgmDEzUNhqqmHDyVc29w8hruJYwIlHbSKhSwmjgGFFJGHUHuw3eRSHhjBNsNnSKOsKZwEGijHBWojZ3qCrCyD8T/TmJIsLZidpcoWoIEwGdRAlhgjvY7T1UBWFCoIMoIEyWqO011PLCxMA3YnFh0kRt/VBLC5OfYLPeKRYWLgLsf21TVrhAoranUIsKk7yqufcglhQulKjtfhcLChcFPojlhIvdwW63UIsJFwd2xFLChRO1taEWEmY4wWbNKZYRZgK2xCLCLInazkXOcJcPeCUWEH7nStR2+M3509odswKr6hL74B/FtGWQbzBFdQAAAABJRU5ErkJggg=="  width="30px" height="30px" style="margin: 5px;"><br>Bookmark</a>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
